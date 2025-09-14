@@ -12,7 +12,7 @@
     h1, h2 { color: #003366; }
     .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
     article { background: #f9f9f9; padding: 1rem; border: 1px solid #ddd; border-radius: 6px; }
-    article img { border-radius: 4px; margin-bottom: 0.5rem; }
+    article img { border-radius: 4px; margin-bottom: 0.5rem; width: 100%; height: auto; }
     footer { background: #003366; color: #fff; padding: 1rem; }
 
     #logo-container {
@@ -24,10 +24,7 @@
       border-radius: 6px;
       z-index: 10;
     }
-    #logo-container img {
-      display: block;
-      width: 120px;
-    }
+    #logo-container img { display: block; width: 120px; }
 
     #menu {
       width: 100%;
@@ -73,6 +70,11 @@
       padding: 2rem;
       border-radius: 10px;
     }
+    #beranda h2 {
+      color: #fff;
+      text-align: center;
+      margin: 0;
+    }
   </style>
 </head>
 <body>
@@ -97,8 +99,7 @@
     <!-- Halaman Utama -->
     <section id="beranda">
       <div class="container">
-        <div class="content">
-        </div>
+        <h2>Selamat Datang di ITERA</h2>
       </div>
     </section>
 
@@ -107,21 +108,21 @@
       <h2>Berita Terbaru</h2>
       <div class="grid">
         <article>
-          <img src="images/berita1.jpg" alt="Seminar Riset Lingkungan" width="100%">
+          <img src="images/berita1.jpg" alt="Seminar Riset Lingkungan">
           <h3>ITERA Selenggarakan Seminar Riset Lingkungan</h3>
           <p><em>12 September 2025 — Humas</em></p>
           <p>Seminar membahas inovasi riset lingkungan untuk pembangunan berkelanjutan...</p>
         </article>
 
         <article>
-          <img src="images/berita2.jpg" alt="Pertanian Presisi" width="100%">
+          <img src="images/berita2.jpg" alt="Pertanian Presisi">
           <h3>Pengabdian Masyarakat: Pertanian Presisi</h3>
           <p><em>1 September 2025 — Tim Pengabdian</em></p>
           <p>Dosen ITERA bekerja sama dengan petani lokal menerapkan teknologi pertanian presisi...</p>
         </article>
 
         <article>
-          <img src="images/berita3.jpg" alt="Prestasi Mahasiswa" width="100%">
+          <img src="images/berita3.jpg" alt="Prestasi Mahasiswa">
           <h3>Prestasi Mahasiswa di Kompetisi Nasional</h3>
           <p><em>25 Agustus 2025 — Akademik</em></p>
           <p>Mahasiswa ITERA meraih juara pada kompetisi nasional bidang teknologi...</p>
@@ -129,8 +130,10 @@
       </div>
     </section>
   </main>
+
   <footer id="kontak">
     <div>
+      <!-- Kontak bisa ditambahkan di sini -->
     </div>
   </footer>
 </body>
